@@ -15,6 +15,7 @@ header {
     top: 0;
     color: white;
     background-color: black;
+    transition: height 0.5s;
 }
 
 .top {
