@@ -1,38 +1,37 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --header-height: 4em;
-  }
-
 header {
-    height: var(--header-height);
-    width: 100%;
     position: fixed;
     top: 0;
-    color: white;
+    width: 100%;
+    height: 3em;
+    transition: height 400ms;
+    overflow-y: hidden;
     background-color: black;
-    transition: height 0.5s;
+    color: white;
 }
 
 .top {
+    height: 3em;
     display: flex;
     align-items: center;
-    height: var(--header-height);
+    color: white;
+    background-color: black;
 }
 
-#burger {
-    margin-left: 20px;
-    font-size: 35px;
-}
-
-.lower {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.dropped {
     height: 100%;
-    width: 100%;
+}
+
+.top i {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.body {
+    margin-top: 5em;
 }

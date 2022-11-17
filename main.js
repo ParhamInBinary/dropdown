@@ -1,7 +1,11 @@
-const burger = document.getElementById("#burger");
-const header = document.querySelector("header");
+function addEventListenerToBurger() {
+    const burger = document.querySelector("#burger");
+    burger.addEventListener("click", toggleBurger);
+}
 
-burger.addEventListener("click", () => {
-    burger.classList.toggle();
-    header.style.height = "100%"
-});
+function toggleBurger() {
+    const header = document.querySelector("header");
+    header.classList.toggle("dropped")
+}
+
+addEventListenerToBurger()
